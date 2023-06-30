@@ -61,7 +61,7 @@ https://web.postman.co/workspace/My-Workspace~ac54ca68-1a00-479f-8578-0fb6271951
 > npm i<br />
 > npm start
 
-![Alt text](image.png)
+![Alt text](/git-images/image.png)
 
 ![Alt text](image-1.png)
 
