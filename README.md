@@ -4,7 +4,7 @@
 
 * Создание диаграммы, моделей и связей между ними в БД
 
-![Alt text](Schema-pic.png)
+![Alt text](/git-images/Schema-pic.png)
 * Основной функционал работы с БД - CRUD(create, read, update, delete)
 * Роутинг
 * Обработка ошибок(401, 403, 404)
@@ -61,11 +61,11 @@ https://web.postman.co/workspace/My-Workspace~ac54ca68-1a00-479f-8578-0fb6271951
 > npm i<br />
 > npm start
 
-![Alt text](image-2.png)
+![Alt text](/git-images/image-2.png)
 
-![Alt text](image.png)
+![Alt text](/git-images/image.png)
 
-![Alt text](image-1.png)
+![Alt text](/git-images/image-1.png)
 
 <br /><hr /><br />
 
