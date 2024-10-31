@@ -1,75 +1,71 @@
-<h2>Fullstack-проект "Интернет-магазин"</h2>
-<br />
-<h3>Реализованы следующие механизмы:</h3> 
+# Fullstack-проект "Интернет-магазин"
 
-* Создание диаграммы, моделей и связей между ними в БД
-
+## Реализованы следующие механизмы:
+- **Создание диаграммы, моделей и связей между ними в БД**
 ![Alt text](/git-images/Schema-pic.png)
-* Основной функционал работы с БД - CRUD(create, read, update, delete)
-* Роутинг
-* Обработка ошибок(401, 403, 404)
-* Middleware для обработки ошибок, проверки факта аутентификации и роли пользователя
-* Раздача статики
-* Регистрация & авторизация по jwt-токену(+ запросы требующие авторизации и общедоступные)
-* Работа со стейтом
-* Визуальная часть: несколько страниц: авторизация/регистрация, админ-панель, главная магазина, деталка товара, модалки
-* Получение данных с сервера, фильтрация по брендам и типам, пагинация
 
-<br />
-<h3>Стек технологий: </h3>
+- **Основной функционал работы с БД** - CRUD (create, read, update, delete)
+- **Роутинг**: Настройка маршрутов для различных страниц приложения
+- **Обработка ошибок**: Реализация обработки ошибок (401, 403, 404)
+- **Middleware**: Для обработки ошибок, проверки аутентификации и роли пользователя
+- **Раздача статики**: Поддержка статических файлов
+- **Регистрация и авторизация**: + использование jwt-токена для защиты приватных маршрутов
+- **Работа со стейтом**: Управление состоянием приложения
+- **Визуальная часть**: Несколько страниц, включая авторизацию/регистрацию, админ-панель, главную страницу магазина, детализацию товара и модальные окна
+- **Получение данных с сервера**: Фильтрация по брендам и типам, пагинация
+  
+## Стек технологий:
+- **PERN Stack**: PostgreSQL + Express + React.js + Node.js
+- **State manager**: MobX
+- **Взаимодействие с сервером**: Axios
 
-* PERN Stack: PostgreSQL + express + React js + node.js
-* State manager MobX
-* Взаимодействие с сервером - Axios 
+---
 
-<br /><hr /><br />
+## Полезные материалы:
 
-<h2>Полезные материалы:</h2>
+### Backend:
+- **Установка PostgreSQL**: [Скачать](https://www.postgresql.org/download/)
+- **Построение диаграмм для БД**: [Diagrams.net](https://app.diagrams.net/)
+- **Клиент для отправки запросов на сервер**: 
+  - [Postman](https://www.postman.com/)
+  - [Postman Web](https://web.postman.co/workspace/My-Workspace~ac54ca68-1a00-479f-8578-0fb627195159/request/create?requestId=9e4505ae-4ccf-471c-bdb4-b377736210f7)
+  - **Нужна установленная desktop-версия для отправки запросов на localhost** (http://localhost:5000)
+- **Декодирование JWT-токенов**: [jwt.io](https://jwt.io/)
 
-<h3>Backend:</h3> 
+### Frontend:
+- **React Bootstrap**: [Документация](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
+- **Парсинг токенов**: [jwt-decode](https://www.npmjs.com/package/jwt-decode)
 
-* Установка PostgreSQL: https://www.postgresql.org/download/
-* Построение диаграмм для БД: https://app.diagrams.net/
-* Клиент, кот. позволяет отправлять запросы на сервер(для проверки работоспособности запросов):<br />
-Postman - https://www.postman.com/
-https://web.postman.co/workspace/My-Workspace~ac54ca68-1a00-479f-8578-0fb627195159/request/create?requestId=9e4505ae-4ccf-471c-bdb4-b377736210f7 - gmail<br />
-Нужна установленная desktop-версия для отправки запросов на localhost(http://localhost:5000)
-* Декодирование JTW-токенов: https://jwt.io/
+---
 
-<h3>Frontend:</h3> 
+## Развертывание и запуск приложения
 
-* React Bootstrap: https://react-bootstrap.netlify.app/docs/getting-started/introduction
-* Для возможности распарсить токен: https://www.npmjs.com/package/jwt-decode
+1. Установить СУБД, создать БД и указать данные для подключения в файле "/server/.env"
 
-<br /><hr /><br />
+2. Backend:
+   
+```bash
+  cd server
+  npm i
+  npm run dev
+```
 
-<h2>Развертывание и запуск приложения</h2><br />
+3. Frontend:
 
-* Установить СУБД, создать БД и указать данные для подключения в файле "/server/.env"
-<br /><br />
-* Backend:<br />
+```bash
+  cd client
+  npm i
+  npm start
+```
 
-> cd server<br />
-> npm i<br />
-> npm run dev
-
-<br />
-
-* Frontend:<br />
-
-> cd client<br />
-> npm i<br />
-> npm start
-
+## Скриншоты
 ![Alt text](/git-images/image.png)
-
 ![Alt text](/git-images/image-1.png)
-
 ![Alt text](/git-images/image-2.png)
 
-<br /><hr /><br />
+---
 
-<h2><i>// TODO:</i></h2>
+## TODO:
 
 В сервисе не реализованы:
 * корзина: добавление, удаление, сохранение
